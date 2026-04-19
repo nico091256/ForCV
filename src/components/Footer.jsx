@@ -10,9 +10,9 @@ const Footer = () => {
     e.preventDefault();
     setStatus('sending');
 
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const SERVICE_ID = 'service_o8zclia';
+    const TEMPLATE_ID = 'template_04ly2is';
+    const PUBLIC_KEY = 'Z32f-YgB1wPZ85MDR';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
