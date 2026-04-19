@@ -7,8 +7,8 @@
   --accent-primary: #3b82f6; /* Electric Blue */
   --accent-secondary: #8b5cf6; /* Violet */
   --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --glass-blur: blur(25px);
+  --text-secondary: #d1d1d6;
+  --glass-blur: blur(25px) saturate(180%);
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
