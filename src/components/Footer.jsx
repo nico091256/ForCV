@@ -16,12 +16,12 @@ const Footer = () => {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
-          console.log(result.text);
+          console.log('SUCCESS!', result.text);
           setStatus('success');
           form.current.reset();
           setTimeout(() => setStatus(''), 5000);
       }, (error) => {
-          console.log(error.text);
+          console.error('FAILED...', error);
           setStatus('error');
           setTimeout(() => setStatus(''), 5000);
       });
