@@ -2,13 +2,13 @@
 
 :root {
   --bg-color: #0a0a0c;
-  --card-bg: rgba(255, 255, 255, 0.12);
-  --border-color: rgba(255, 255, 255, 0.15);
+  --card-bg: rgba(10, 10, 12, 0.8);
+  --border-color: rgba(255, 255, 255, 0.1);
   --accent-primary: #3b82f6; /* Electric Blue */
   --accent-secondary: #8b5cf6; /* Violet */
   --text-primary: #ffffff;
   --text-secondary: #d1d1d6;
-  --glass-blur: blur(25px) saturate(180%);
+  --glass-blur: blur(60px);
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
