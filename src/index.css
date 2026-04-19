@@ -8,7 +8,7 @@
   --accent-secondary: #8b5cf6; /* Violet */
   --text-primary: #ffffff;
   --text-secondary: #d1d1d6;
-  --glass-blur: blur(70px) saturate(180%);
+  --glass-blur: blur(200px) saturate(180%);
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
