@@ -45,8 +45,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="glass" style={{ padding: '40px', flex: 1, minWidth: '300px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '20px' }}>
+        <form ref={form} onSubmit={sendEmail} className="glass" style={{ padding: '30px', flex: 1, minWidth: '300px' }}>
+          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '20px' }}>
             <input type="text" name="user_name" placeholder="Name" required className="glass" style={{ padding: '15px', background: 'transparent', border: '1px solid var(--border-color)', color: 'white' }} />
             <input type="email" name="user_email" placeholder="Email" required className="glass" style={{ padding: '15px', background: 'transparent', border: '1px solid var(--border-color)', color: 'white' }} />
           </div>
@@ -68,6 +68,12 @@ const Footer = () => {
           >
             {status === 'sending' ? 'Sending...' : status === 'success' ? 'Message Sent!' : status === 'error' ? 'Error! Try Again' : 'Send Message'}
           </button>
+          
+          <style dangerouslySetInnerHTML={{ __html: `
+            @media (max-width: 600px) {
+              .footer-grid { grid-template-columns: 1fr !important; }
+            }
+          `}} />
         </form>
       </div>
       <div style={{ marginTop: '80px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
