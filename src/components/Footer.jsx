@@ -10,9 +10,9 @@ const Footer = () => {
     e.preventDefault();
     setStatus('sending');
 
-    const SERVICE_ID = 'service_o8zclia';
-    const TEMPLATE_ID = 'template_04ly2is';
-    const PUBLIC_KEY = 'Z32f-YgB1wPZ85MDR';
+    const SERVICE_ID = 'service_l4zbazt';
+    const TEMPLATE_ID = 'template_55sz6i6';
+    const PUBLIC_KEY = 'IXFTzNXz8PALlbe50';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
