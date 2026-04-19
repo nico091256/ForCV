@@ -12,7 +12,7 @@ const Footer = () => {
 
     const SERVICE_ID = 'service_l4zbazt';
     const TEMPLATE_ID = 'template_bv35s0k';
-    const PUBLIC_KEY = 'IXFTzNXz8PALlbe50';
+    const PUBLIC_KEY = '220kjBm8htkzAgOHV';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
